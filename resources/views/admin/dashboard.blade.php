@@ -10,6 +10,7 @@
 
         <div class="row">
             <div class="col-md-3">
+                @if(Session('alert')) <div class="alert alert-success">{{Session('alert')}}</div>@endif
                 <div class="panel panel-primary">
                     <div class="panel-heading">New Products</div>
                     <div class="panel-body">

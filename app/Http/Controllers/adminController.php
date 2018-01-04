@@ -33,7 +33,7 @@ class adminController extends Controller
 
         $pd ->save();
         Storage::disk('cover_img')->put($cover_name,file($cover_file));
-        return redirect()->back();
+        return redirect()->back()->with('alert','You have successfully Item added.');
 
     }
 

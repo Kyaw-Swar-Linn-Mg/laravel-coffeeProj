@@ -21,7 +21,7 @@ class authController extends Controller
      */
     public function getLogout(){
         Auth::logout();
-        return redirect()->route('/');
+        return redirect()->route('home');
     }
 
     public function postRegister(Request $request){
